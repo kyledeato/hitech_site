@@ -106,13 +106,14 @@ button{
       border-radius: 100%;
       height: 500px;
       width: 500px;
+      
   }
 
 
   .inner_text{
       font-family: "Open Sans", serif;
       font-size: 2rem;
-      width: 50%;
+      width: 800px;
       text-align: center;
       display: block;
       
