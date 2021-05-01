@@ -119,4 +119,33 @@ button{
       
   }
 
+  /**FOOTER**/
+
+  footer{
+      background-color: black;
+      display:flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding-top: 10px;
+  }
+
+  .opening-hours, .location, .menu, .contact, footer li, .menu li a{
+    color: white;
+    font-family: "Open Sans", serif;
+    font-size: 1rem;
+    min-width: 400px;
+  } 
+
+  .heading{
+      font-size: 22px;
+      font-weight: 600;
+  }
+
+  .menu li a{
+      text-decoration: underline;
+  }
+
+  .heading ul li {
+    padding: 10px 0;
+  }
   
