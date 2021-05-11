@@ -186,12 +186,65 @@ button{
     color: white;
     flex-wrap: wrap;
     flex-flow: column;
-    
   }
 
 
 
 /**PRODUCTS PAGE*************/
+    .products-main{
+        padding-bottom: 50px;
+    }
+    .products-heading{
+        font-family: "Open Sans", serif;
+        text-align: center;
+    }
+    .products-heading h1 {
+        font-size: 60px;
+        font-weight: 700;
+        margin: 20px;
+    }
+    .products-heading p{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .underline{
+        text-decoration: underline;
+    }
+    .product-container{
+        margin: 50px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly; 
+         
+        
+    }
+    .boxes img {
+       width: 450px;
+       display: block; 
+       height: 500px;
+       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .boxes:hover{
+        transform: scale(1.1);
+        background-color: gray;
+    }
+
+    .boxes p{
+        font-size: 20px;
+        font-family: "Open Sans", serif;
+        text-align: center;
+        font-weight: 600;
+        padding: 10px;  
+    }
+
+    .button-products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /**WORKSTATION**/
 
 
 
@@ -202,8 +255,7 @@ button{
 
 
 
-
-
+    
   /**FOOTER**/
 
   footer{
