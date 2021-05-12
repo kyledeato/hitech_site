@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@400;700;800&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
 
+/**universal**/
+.button-mains{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
 
 /**HEADER**/
 a:visited {
@@ -131,12 +143,12 @@ button{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin: 40px 0;
 }
   .inner_img{
       border-radius: 100%;
-      height: 500px;
-      width: 500px;
+      height: 600px;
+      width: 600px;
       
   }
 
@@ -147,6 +159,9 @@ button{
       width: 800px;
       text-align: center;
       display: block;
+      background-color: lightgray;
+      border-radius: 8px;
+      padding: 5px;
       
   }
 
@@ -238,24 +253,117 @@ button{
         padding: 10px;  
     }
 
-    .button-products{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
 
     /**WORKSTATION**/
 
-
-
-
-
-
-
-
-
-
+    .workstation-heading{
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", serif;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        margin: 20px;
+    }
+    .workstation-container{
+        display: flex;
+        margin: 10px 20px;
+        background-color: lightgray;
+        border-radius: 8px;
+        width: auto;
+    }
     
+    
+    .workstation-content{
+        font-size: 22px;
+        font-family: "Open Sans", serif;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .workstation-content ul li{
+        padding: 5px;
+    }
+
+    .workstation-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .workstation-photo{
+        max-width: 25%;
+        height: 400px;
+    }
+
+    .workstation-photo img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /**CONTACT US**/
+    .aboutUs-heading{
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", serif;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        margin: 20px;
+    }
+
+    .aboutUs-container{
+        display: flex;
+    }
+
+    .aboutUs-content{
+        width: 100%;
+        font-family: "Open Sans", serif;
+        font-size: 22px;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .aboutUs-top{
+        display: block;
+        margin: 20px;
+        border-radius: 8px;
+        line-height: 1.2;
+    }
+
+    .aboutUs-bottom{
+        margin:  40px 20%;
+    }
+    .aboutUs-quote{
+        background-color: #C0C0C0;
+        padding: 5px;
+        border-radius: 10px;
+        margin:  40px 20%;
+    }
+    blockquote {
+        margin: 0;
+    }
+    
+    blockquote p {
+        margin: 30px;
+        border-radius: 5px;
+        font-style: italic;
+        font-family: "Open Sans", serif;
+        font-size: 20px;
+    }
+    figcaption{
+        text-align: center;
+        font-family: "Open Sans", serif;
+        font-size: 20px;
+    }
+
   /**FOOTER**/
 
   footer{
@@ -288,7 +396,7 @@ button{
     padding: 10px 20px;
 }
 
-.menu li a{
+.menu li a, .phone{
     text-decoration: underline;
 }
 
@@ -299,4 +407,13 @@ button{
   }
 
 
-  
+  /**RESPONSIVE**/
+
+  @media only screen and (max-width: 800px) {
+    
+    .workstation-photo{
+        max-width: 100%;
+        height: 400px;
+    }
+      
+  }
