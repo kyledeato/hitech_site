@@ -24,12 +24,55 @@
     </header>
 
     <main>
-        
+      <div class="qoute-heading">
+        <h1>Quick Quote</h2>
+      </div>
+
+      <div class="quote-form">
+        <form action="https://formsubmit.co/kyledeato@email.com" method="POST"> <!--need to change email-->
+          <section class="name">
+            <label for="name-form">Name:</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="First and Last name..." required>
+          </section>
+          <hr>
+          <section class="email-form">
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+          </section>
+          <hr>
+          <section class="phone-form">
+            <label for="phone">Phone number:</label>
+            <br>
+            <input type="text" name="phone" id="phone" placeholder="Phone number" required>
+          </section>
+          <hr>
+          <section class="plan-prices-form">
+          <span>Would like prices for:</span>
+          <br>
+          <input type="checkbox" name="plan-prices-form" id="plan-prices-form" value="daily">
+          <label class="checkbox-form" for="daily">Daily</label>
+          <input type="checkbox" name="plan-prices-form" id="plan-prices-form" value="weekly">
+          <label class="checkbox-form" for="weekly">Weekly</label>
+          <input type="checkbox" name="plan-prices-form" id="plan-prices-form" value="monthly">
+          <label class="checkbox-form" for="monthly">Monthly</label>
+        </section>
+        <hr>
+          <section class="equipment-form">
+            <label for="equipment">Let us know what you need:</label>
+            <br>
+            <textarea id="equipment" name="equipment" rows="8" cols="50" placeholder="Ex: 2015 Macbook pro, 8 Gb RAM, printers..."></textarea>
+          </section>
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Quote!">
+          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+    
+          <button type="submit">Submit</button>
+     </form>
+      </div>
     </main>
-
-
-
-
 
 
     <footer>
